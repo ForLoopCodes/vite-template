@@ -17,15 +17,29 @@
   --spring-light: cubic-bezier(0.4, -0.5, 0, 1.8);
 }
 
-@keyframes fade-in {
+@keyframes fade-in-p {
   0% {
-    opacity: 0;
-    filter: blur(50px);
-    transform: translateY(-2rem);
+    opacity: 0 !important;
+    transform: translateY(1rem);
+    margin-right: 0rem;
+    filter: blur(10px);
+    scale: 1.2;
   }
   100% {
     opacity: 1;
-    filter: blur(0px);
+    transform: translateY(0);
+    margin-right: 0.2rem;
+    filter: blur(0);
+    scale: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -92,4 +106,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.geistMono {
+  font-family: Geist Mono !important;
+}
+
+.geistMono * {
+  font-family: Geist Mono !important;
+}
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }

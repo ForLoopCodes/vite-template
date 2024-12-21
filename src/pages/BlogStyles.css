@@ -1,0 +1,61 @@
+.blogElement h1 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-2xl border-b py-3 border-neutral-400;
+}
+.blogElement hr {
+  @apply border-neutral-400;
+}
+.blogElement h2 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-xl my-5;
+}
+.blogElement h3 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-lg my-5;
+}
+.blogElement h4 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-base my-5;
+}
+.blogElement h5 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-sm my-5;
+}
+.blogElement h6 {
+  @apply text-green-300 border-b border-neutral-700 pb-2 text-xs my-5;
+}
+.blogElement p {
+  @apply text-base my-5;
+}
+.blogElement ul {
+  @apply list-disc list-inside my-5;
+}
+.blogElement ol {
+  @apply list-decimal mx-5 my-5;
+}
+.blogElement li {
+  @apply mb-2;
+}
+.blogElement li::marker {
+  @apply text-green-300;
+}
+.blogElement a {
+  @apply text-green-300 underline;
+}
+.blogElement blockquote {
+  @apply border-l-4 border-green-300 pl-4 italic my-5 rounded;
+}
+.blogElement strong {
+  @apply font-bold;
+}
+.blogElement code {
+  @apply w-full block text-green-300 text-wrap bg-green-900 bg-opacity-50 font-medium px-5 py-3 rounded-sm;
+  font-family: geist mono;
+}
+.blogElement table {
+  @apply table-auto w-full border-collapse border border-green-300 my-5;
+}
+.blogElement th {
+  @apply border border-green-300 px-4 py-2 text-left;
+}
+.blogElement td {
+  @apply border border-green-300 px-4 py-2;
+}
+.blogElement img {
+  @apply max-w-full rounded-sm opacity-90;
+}

@@ -8,5 +8,16 @@ body,
 }
 body * {
   transition: all 0.4s var(--spring) !important;
-  animation: fade-in 0.8s ease-in !important;
+  animation: fade-in 0.4s ease-in !important;
+}
+p.animate {
+  animation: fade-in-p 0.3s var(--spring-light) !important;
+}
+a {
+  @apply hover:brightness-[5] !ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.grid-container * {
+  transition: ease-in-out !important;
+  animation: none !important;
 }
