@@ -18,6 +18,8 @@ a {
   transition: all 0.4s ease-in-out;
 }
 .grid-container * {
-  transition: ease-in-out !important;
+  transition: 0.05s ease-in-out !important;
+  z-index: 10000 !important;
+  pointer-events: all !important;
   animation: none !important;
 }

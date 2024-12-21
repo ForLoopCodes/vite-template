@@ -3,7 +3,7 @@ import "./BlogStyles.css";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 
-export const BlogLinks = () => {
+export const HomeBlogLinks = () => {
   const devBlogs = blogs.filter((blog) => blog.type == "DEV BLOG");
   const miscBlogs = blogs.filter((blog) => blog.type == "MISC");
   const personalBlogs = blogs.filter((blog) => blog.type == "PERSONAL");
@@ -17,9 +17,9 @@ export const BlogLinks = () => {
     miscBlogs,
   ];
   return (
-    <div className="h-full min-h-screen w-screen overflow-x-hidden">
-      <div className="h-full min-h-screen w-screen grid grid-rows-[auto_1fr_auto] h-full text-foreground antialiased bg-[radial-gradient(#ffffff33_1px,_transparent_1px)] bg-[length:1rem_1rem]">
-        <div className="py-[30vh] w-screen lg:px-48 px-10">
+    <div>
+      <div className="text-left">
+        <div className="w-screen lg:px-48 px-10">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 w-full">
             {content.map((item) => (
               <div className="break-words h-full w-full" key={item[0].id}>

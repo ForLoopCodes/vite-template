@@ -5,6 +5,7 @@ import { HomePage } from "./pages/homePage";
 import { ThemeProvider } from "./components/theme-provider";
 import { Divider } from "./pages/Divider";
 import { BlogLinks } from "./pages/BlogLinks";
+import { Skills } from "./pages/skills";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/blog/:category",
         element: <BlogRenderer />,
+      },
+      {
+        path: "/skills/",
+        element: <Skills />,
       },
     ],
   },

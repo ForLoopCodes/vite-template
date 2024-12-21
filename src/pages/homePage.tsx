@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Grid from "./Grid";
 import { Keyboard } from "lucide-react";
+import { HomeBlogLinks } from "./homeBlogLinks";
+import { HomeSkills } from "./homeSkills";
 
 export const HomePage = () => {
   const [viewDetails, setViewDetails] = useState(
@@ -36,17 +38,24 @@ export const HomePage = () => {
             <span className="!text-neutral-200"> SaaS MVP </span>
             for your
             <span className="!text-neutral-200"> Startup. </span>I love{" "}
+            <span className="!text-neutral-200 underline">Business, </span>
+            <span className="!text-green-300 underline">
+              Machine Learning, Web3,{" "}
+            </span>
             <span className="!text-neutral-200 underline">
-              Business, Machine Learning, Web3, Crypto, Hackathons
+              Crypto, Hackathons
             </span>{" "}
             & Chess.
           </p>
           <p className="lg:w-1/2 px-14 pt-14 text-lg underline flex items-center gap-5 justify-around">
+            <a href="/skills" className="!text-green-300">
+              /SKILLS
+            </a>
             <a href="/blog" className="!text-green-300">
               /BLOG
             </a>
-            <a href="/skills" className="!text-green-300">
-              /SKILLS
+            <a href="/projects" className="!text-green-300">
+              /TIMELINE
             </a>
             <a href="/projects" className="!text-green-300">
               /PROJECTS
@@ -62,7 +71,7 @@ export const HomePage = () => {
             {name}
           </div>*/}
         </div>
-        <div className="!animation-none !scale-[0.8] lg:!scale-[0.6] hover:!scale-[0.8] lg:hover:!scale-[0.61] grid-container transition-timing-function-[var(--spring-intense)] rounded-[4rem]">
+        <div className="!animation-none !scale-[0.8] lg:!scale-[0.6] hover:!scale-[0.8] lg:hover:!scale-[0.6] grid-container transition-timing-function-[var(--spring-intense)] rounded-[4rem]">
           <div
             className={
               "flex items-center justify-center w-full h-screen slide grid-container bg-neutral-800 bg-opacity-50 shadow-2xl" +
@@ -70,7 +79,7 @@ export const HomePage = () => {
             }
             style={{
               overflow: "hidden",
-              zIndex: 0,
+              zIndex: 10000,
               transition: "ease-in-out !important",
               animation: "none",
             }}
@@ -114,8 +123,8 @@ export const HomePage = () => {
           FORLOOPCODES
         </div>
       </div>{" "}*/}
-        <div className="lg:text-4xl hidden lg:flex text-sm flex-col items-center w-full text-center geistMono mt-[-26vh] select-none relative text-neutral-500">
-          <p className="lg:w-[64.1vw] gap-2 px-14 pt-14 text-sm flex items-center justify-end">
+        <div className="lg:text-4xl hidden lg:flex text-sm flex-col items-center w-full text-center geistMono mt-[-20vh] select-none relative text-neutral-500">
+          <p className="lg:w-[64.1vw] gap-2 px-14 text-sm flex items-center justify-end">
             <a className="!text-green-300 flex items-center justify-center gap-2 rounded bg-green-300 bg-opacity-20 px-2 py-1 border border-green-400 opacity-80">
               <Keyboard className="w-4 h-4" strokeWidth={2} /> 0
             </a>{" "}
@@ -144,6 +153,27 @@ export const HomePage = () => {
           {/*<div className="absolute top-0 w-full left-0 blur-[4rem] brightness-[1.2] select-none saturate-[10]">
             {name}
           </div>*/}
+        </div>
+        <div className="mt-[-10vh] geistMono flex flex-col items-center">
+          {" "}
+          <p className="lg:w-1/2 px-14 mt-14 mb-[-4vh] text-lg text-center text-neutral-400">
+            I FW you if you are interested in <br />
+            <span className="!text-white">
+              Public Speaking, GATE, Aptitude, Reasoning
+            </span>
+            <br />
+            and A LOT OF{" "}
+            <span className="!text-green-300 underline">TECH SKILLS</span>.
+          </p>
+          <HomeSkills />
+        </div>
+        <div className="mt-[-10vh] geistMono flex flex-col items-center">
+          {" "}
+          <p className="lg:w-1/2 px-14 mt-5 mb-[10vh] text-lg text-center text-neutral-400">
+            and... sometimes I get a lot on my mind so I write it out as{" "}
+            <span className="!text-green-300 underline">blogs</span>. <br />
+          </p>
+          <HomeBlogLinks />
         </div>
       </div>
     </div>
