@@ -47,7 +47,7 @@ export const HomePage = () => {
             </span>{" "}
             & Chess.
           </p>
-          <p className="lg:w-1/2 px-14 pt-14 text-lg underline flex items-center gap-5 justify-around">
+          <p className="lg:w-1/2 w-[90vw] px-14 pt-14 text-lg underline flex wrap items-center gap-10 justify-center">
             <a href="/skills" className="!text-green-300">
               /SKILLS
             </a>
@@ -55,13 +55,21 @@ export const HomePage = () => {
               /BLOG
             </a>
             <a href="/projects" className="!text-green-300">
-              /TIMELINE
-            </a>
-            <a href="/projects" className="!text-green-300">
               /PROJECTS
             </a>
             <a href="/socials" className="!text-green-300">
               /SOCIALS
+            </a>
+          </p>
+          <p className="lg:w-1/2 w-[90vw] px-14 pt-2 text-lg underline flex wrap items-center gap-10 justify-center">
+            <a href="/timeline" className="!text-green-300">
+              /TIMELINE
+            </a>
+            <a href="/hackathons" className="!text-green-300">
+              /HACKATHONS
+            </a>
+            <a href="/goals" className="!text-green-300">
+              /GOALS
             </a>
           </p>
           {/*name.split("").map((char) => {
@@ -157,11 +165,10 @@ export const HomePage = () => {
         <div className="mt-[-10vh] geistMono flex flex-col items-center">
           {" "}
           <p className="lg:w-1/2 px-14 mt-14 mb-[-4vh] text-lg text-center text-neutral-400">
-            I FW you if you are interested in <br />
+            you match my vibe if you're interested in{" "}
             <span className="!text-white">
               Public Speaking, GATE, Aptitude, Reasoning
-            </span>
-            <br />
+            </span>{" "}
             and A LOT OF{" "}
             <span className="!text-green-300 underline">TECH SKILLS</span>.
           </p>

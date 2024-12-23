@@ -6,6 +6,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import { Divider } from "./pages/Divider";
 import { BlogLinks } from "./pages/BlogLinks";
 import { Skills } from "./pages/skills";
+import { Projects } from "./pages/projects";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/skills/",
         element: <Skills />,
+      },
+      {
+        path: "/projects/",
+        element: <Projects />,
       },
     ],
   },

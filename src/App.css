@@ -7,7 +7,7 @@ body,
   @apply h-full w-full m-0 p-0;
 }
 body * {
-  transition: all 0.4s var(--spring) !important;
+  transition: all 0.2s ease-in-out;
   animation: fade-in 0.4s ease-in !important;
 }
 p.animate {
