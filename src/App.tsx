@@ -7,6 +7,7 @@ import { Divider } from "./pages/Divider";
 import { BlogLinks } from "./pages/BlogLinks";
 import { Skills } from "./pages/skills";
 import { Projects } from "./pages/projects";
+import { Socials } from "./pages/socials";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/projects/",
         element: <Projects />,
+      },
+      {
+        path: "/socials/",
+        element: <Socials />,
       },
     ],
   },

@@ -8,7 +8,7 @@ body,
 }
 body * {
   transition: all 0.2s ease-in-out;
-  animation: fade-in 0.4s ease-in !important;
+  animation: fade-in 0.6s ease-in !important;
 }
 p.animate {
   animation: fade-in-p 0.3s var(--spring-light) !important;

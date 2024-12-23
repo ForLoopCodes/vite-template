@@ -3,6 +3,9 @@ import Grid from "./Grid";
 import { Keyboard } from "lucide-react";
 import { HomeBlogLinks } from "./homeBlogLinks";
 import { HomeSkills } from "./homeSkills";
+import { HomeProjects } from "./homeProjects";
+import { HomeSocials } from "./homeSocials";
+import { Link } from "react-router-dom";
 
 export const HomePage = () => {
   const [viewDetails, setViewDetails] = useState(
@@ -48,29 +51,29 @@ export const HomePage = () => {
             & Chess.
           </p>
           <p className="lg:w-1/2 w-[90vw] px-14 pt-14 text-lg underline flex wrap items-center gap-10 justify-center">
-            <a href="/skills" className="!text-green-300">
+            <Link to="/skills" className="!text-green-300">
               /SKILLS
-            </a>
-            <a href="/blog" className="!text-green-300">
+            </Link>
+            <Link to="/blog" className="!text-green-300">
               /BLOG
-            </a>
-            <a href="/projects" className="!text-green-300">
+            </Link>
+            <Link to="/projects" className="!text-green-300">
               /PROJECTS
-            </a>
-            <a href="/socials" className="!text-green-300">
+            </Link>
+            <Link to="/socials" className="!text-green-300">
               /SOCIALS
-            </a>
+            </Link>
           </p>
           <p className="lg:w-1/2 w-[90vw] px-14 pt-2 text-lg underline flex wrap items-center gap-10 justify-center">
-            <a href="/timeline" className="!text-green-300">
+            <Link to="/timeline" className="!text-green-300">
               /TIMELINE
-            </a>
-            <a href="/hackathons" className="!text-green-300">
+            </Link>
+            <Link to="/hackathons" className="!text-green-300">
               /HACKATHONS
-            </a>
-            <a href="/goals" className="!text-green-300">
+            </Link>
+            <Link to="/goals" className="!text-green-300">
               /GOALS
-            </a>
+            </Link>
           </p>
           {/*name.split("").map((char) => {
             return <p className="animate">{char}</p>;
@@ -165,6 +168,8 @@ export const HomePage = () => {
         <div className="mt-[-10vh] geistMono flex flex-col items-center">
           {" "}
           <p className="lg:w-1/2 px-14 mt-14 mb-[-4vh] text-lg text-center text-neutral-400">
+            {new Date().getFullYear() - 2006}, from India,
+            <br />
             you match my vibe if you're interested in{" "}
             <span className="!text-white">
               Public Speaking, GATE, Aptitude, Reasoning
@@ -176,11 +181,45 @@ export const HomePage = () => {
         </div>
         <div className="mt-[-10vh] geistMono flex flex-col items-center">
           {" "}
+          <p className="lg:w-1/2 px-14 mt-5 mb-[10vh] text-2xl text-center text-neutral-400">
+            <span className="!text-green-300 underline">
+              {new Date().getFullYear() - 2018} Years
+            </span>
+            <br /> of coding knowledge with
+            <br />
+            <span className="!text-green-300 underline">
+              {new Date().getFullYear() - 2020} Years
+            </span>
+            <br /> of development experience.
+          </p>
+          <HomeProjects />
+        </div>{" "}
+        <div className="mt-[-10vh] geistMono flex flex-col items-center">
+          {" "}
           <p className="lg:w-1/2 px-14 mt-5 mb-[10vh] text-lg text-center text-neutral-400">
             and... sometimes I get a lot on my mind so I write it out as{" "}
             <span className="!text-green-300 underline">blogs</span>. <br />
           </p>
           <HomeBlogLinks />
+        </div>{" "}
+        <div className="geistMono flex flex-col items-center">
+          {" "}
+          <p className="lg:w-1/2 px-14 m-10 mt-20 text-lg text-center text-neutral-400">
+            mom! i'm famous online!
+            <br />
+            yeah, i know i've arranged the links in a pattern.
+          </p>
+          <HomeSocials />
+        </div>
+        <div className="geistMono flex flex-col items-center">
+          {" "}
+          <p className="lg:w-1/2 px-14 my-48 text-lg text-center text-neutral-400">
+            {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
+            FORLOOPCODES
+            <br />
+            <p>"Who's the god?"</p>
+            <p>come on, stop stalking</p>
+          </p>
         </div>
       </div>
     </div>

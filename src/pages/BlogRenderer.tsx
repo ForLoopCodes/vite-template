@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import { blogs } from "./blogs";
 import "./BlogStyles.css";

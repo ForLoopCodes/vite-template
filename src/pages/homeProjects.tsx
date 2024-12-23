@@ -1,7 +1,7 @@
 import "./BlogStyles.css";
 import { ArrowUp, ArrowUpRight } from "lucide-react";
 
-export const Projects = () => {
+export const HomeProjects = () => {
   // add priority opacity
   const projects = [
     {
@@ -331,9 +331,9 @@ export const Projects = () => {
   // LEETCODE MLSA
 
   return (
-    <div className="h-full min-h-screen w-screen overflow-x-hidden">
-      <div className="h-full min-h-screen w-screen grid grid-rows-[auto_1fr_auto] h-full text-foreground antialiased bg-[radial-gradient(#ffffff33_1px,_transparent_1px)] bg-[length:1rem_1rem]">
-        <div className="py-[30vh] w-screen lg:px-48 px-10">
+    <div>
+      <div className="text-left">
+        <div className="pb-[15vh] w-screen lg:px-48 px-10">
           <div className="grid grid-cols-1 gap-10 w-full">
             {projects.map((section) => (
               <div className="break-words h-full w-full" key={section.title}>

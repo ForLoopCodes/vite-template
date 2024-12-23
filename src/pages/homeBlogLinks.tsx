@@ -23,7 +23,12 @@ export const HomeBlogLinks = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 w-full">
             {content.map((item) => (
               <div className="break-words h-full w-full" key={item[0].id}>
-                <Link to={"/blog/" + item[0].type.toLocaleLowerCase()}>
+                <Link
+                  to={"/blog/" + item[0].type.toLocaleLowerCase()}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" }); // Smoothly scroll to the top
+                  }}
+                >
                   <h3 className="geistMono text-lg text-neutral-400 my-2 tracking-tighter">
                     / {item[0].type}
                   </h3>
@@ -33,6 +38,9 @@ export const HomeBlogLinks = () => {
                     to={
                       "/blog/" + blog.type.toLocaleLowerCase() + "/" + blog.id
                     }
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" }); // Smoothly scroll to the top
+                    }}
                   >
                     <h3 className="geistMono text-sm my-2 tracking-tighter text-neutral-400">
                       <span className="geistMono text-sm tracking-tighter text-green-300"></span>

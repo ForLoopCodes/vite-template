@@ -13,7 +13,7 @@ export const Header = () => {
   const pathSegments = path.split("/").filter((e) => e !== "");
 
   // Construct the full path for each segment
-  const fullPath = pathSegments.map((segment, index) => {
+  const fullPath = pathSegments.map((index: any) => {
     return `/${pathSegments.slice(0, index + 1).join("/")}`;
   });
 

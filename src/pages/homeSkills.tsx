@@ -57,7 +57,7 @@ export const HomeSkills = () => {
         { name: "Supabase", level: 3 },
         { name: "Firebase", level: 1 },
         { name: "MySQL", level: 3 },
-        { name: "Postgres", level: 3 },
+        { name: "PostgreSQL", level: 3 },
       ],
     },
     {
