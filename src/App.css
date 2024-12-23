@@ -4,9 +4,17 @@
 html,
 body,
 .viewport {
-  @apply h-full w-full m-0 p-0;
+  @apply h-full w-screen m-0 p-0 overflow-x-hidden;
 }
 body * {
   transition: all 0.4s var(--spring) !important;
   animation: fade-in 0.8s ease-in !important;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  display: none;
 }

@@ -20,7 +20,7 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    filter: blur(50px);
+    /*filter: blur(50px);*/
     transform: translateY(-2rem);
   }
   100% {
